@@ -1,3 +1,4 @@
+```
 create database Cookbook; 
 create table Recipe (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, name VARCHAR(25), time INT, people INT) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 create table Ingredient (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50)) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
@@ -26,3 +27,4 @@ SELECT r.name AS 'Recipe', r.people, r.time AS 'Time', mu.name AS 'Unit of Measu
 
 
 select i.name as "Ingredient", sum(r.time) as 'Time' from Ingredient  i JOIN RecipeIngredient ri on i.id = ri.ingredient_id JOIN Recipe r on r.id = ri.recipe_id where i.name = '?';
+```
