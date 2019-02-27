@@ -1,4 +1,5 @@
 ```
+SET FOREIGN_KEY_CHECKS=0;
 create database Cookbook; 
 use Cookbook;
 create table Recipe (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, name VARCHAR(25), time INT, people INT) ENGINE=InnoDB DEFAULT CHARSET=utf8;
